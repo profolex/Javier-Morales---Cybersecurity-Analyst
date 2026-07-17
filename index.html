@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javier Morales | Cybersecurity Analyst Portfolio</title>
+  <meta name="description" content="Professional portfolio of Javier Morales, a Cybersecurity Analyst specialized in detecting risk early, threat monitoring, incident triage, and log analysis.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="header-nav" id="main-header">
+    <div class="container nav-container">
+      <a href="#hero" class="logo" id="nav-logo">
+        <span>JM</span>
+      </a>
+      
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" id="nav-link-about">About</a></li>
+        <li><a href="#skills" id="nav-link-skills">Skills</a></li>
+        <li><a href="#experience" id="nav-link-experience">Experience</a></li>
+        <li><a href="#projects" id="nav-link-projects">Projects</a></li>
+        <li><a href="#certifications" id="nav-link-certs">Certifications</a></li>
+        <li><a href="#contact" id="nav-link-contact">Contact</a></li>
+        <li><a href="#contact" class="btn btn-primary" id="nav-cta-resume">Download Resume</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <section class="hero" id="hero">
+    <div class="container grid-2">
+      <div class="hero-content reveal active">
+        <div class="mono-tag" id="hero-tag">Sec-Ops Operational Status: Active</div>
+        <h1 class="hero-title" id="hero-name">
+          Javier Morales
+          <span>Cybersecurity Analyst</span>
+        </h1>
+        <p class="hero-tagline" id="hero-tagline">
+          Detecting risk early, strengthening defenses, and turning security signals into action. Based in Mexico City, Mexico.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary" id="hero-cta-work">View Security Work</a>
+          <a href="#contact" class="btn btn-secondary" id="hero-cta-resume-dl">Download Resume</a>
+        </div>
+        
+        <div class="hero-stats" id="hero-stats-panel">
+          <div class="stat-card" id="stat-experience">
+            <div class="stat-num">5+</div>
+            <div class="stat-label">Years in Cybersecurity Operations</div>
+          </div>
+          <div class="stat-card" id="stat-incidents">
+            <div class="stat-num">120+</div>
+            <div class="stat-label">Incidents Triaged & Documented</div>
+          </div>
+          <div class="stat-card" id="stat-optimization">
+            <div class="stat-num">33%</div>
+            <div class="stat-label">Response Workflow Speedup</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal active">
+        <div class="avatar-glow-frame"></div>
+        <div class="avatar-wrapper">
+          <div class="scan-line"></div>
+          <div class="avatar-overlay"></div>
+          <!-- Fallback styled image for avatar due to API exhaustion -->
+          <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=600&h=600" alt="Javier Morales - Cybersecurity Analyst" class="avatar-img" id="hero-avatar">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECURITY MARQUEE BANNER
+       ========================================================================== -->
+  <div class="security-banner" id="security-marquee-banner">
+    <div class="ticker-wrap">
+      <div class="ticker" id="marquee-ticker">
+        <div class="ticker-item"><i data-lucide="shield-check"></i> STATUS: <span class="cyan">MONITORING ACTIVE</span></div>
+        <div class="ticker-item"><i data-lucide="shield-alert"></i> THREAT LEVEL: <span class="cyan">LOW (GREEN)</span></div>
+        <div class="ticker-item"><i data-lucide="terminal"></i> SHELL ACCESS: <span class="cyan">ENCRYPTED SSLv3</span></div>
+        <div class="ticker-item"><i data-lucide="activity"></i> LOG INTEGRATION: <span class="cyan">100% SECURE</span></div>
+        <div class="ticker-item"><i data-lucide="cpu"></i> SOC STACKS: <span class="cyan">ONLINE</span></div>
+        <div class="ticker-item"><i data-lucide="lock"></i> INCIDENTS RUNNING: <span class="crimson">0 PENDING</span></div>
+        <!-- Duplicate for loop -->
+        <div class="ticker-item"><i data-lucide="shield-check"></i> STATUS: <span class="cyan">MONITORING ACTIVE</span></div>
+        <div class="ticker-item"><i data-lucide="shield-alert"></i> THREAT LEVEL: <span class="cyan">LOW (GREEN)</span></div>
+        <div class="ticker-item"><i data-lucide="terminal"></i> SHELL ACCESS: <span class="cyan">ENCRYPTED SSLv3</span></div>
+        <div class="ticker-item"><i data-lucide="activity"></i> LOG INTEGRATION: <span class="cyan">100% SECURE</span></div>
+        <div class="ticker-item"><i data-lucide="cpu"></i> SOC STACKS: <span class="cyan">ONLINE</span></div>
+        <div class="ticker-item"><i data-lucide="lock"></i> INCIDENTS RUNNING: <span class="crimson">0 PENDING</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       ABOUT SECTION
+       ========================================================================== -->
+  <section id="about">
+    <div class="container">
+      <span class="mono-tag" id="about-mono-tag">Identity Profile</span>
+      <h2 class="section-title" id="about-heading">About <span>Javier</span></h2>
+      
+      <div class="about-grid">
+        <div class="about-text reveal" id="about-text-content">
+          <p>
+            Javier Morales is a cybersecurity analyst who helps organizations monitor threats, improve detection workflows, and respond to security events with consistency. He works across log analysis, alert triage, incident documentation, and policy support to help teams stay prepared and informed.
+          </p>
+          <p>
+            His background includes security operations, endpoint monitoring, access reviews, and basic threat intelligence. Javier is known for being calm under pressure, detail-oriented in investigations, and effective at turning technical findings into clear action items for stakeholders.
+          </p>
+        </div>
+
+        <div class="strengths-card reveal" id="about-strengths-card">
+          <h3 id="strengths-card-title">Core Strengths <i data-lucide="fingerprint"></i></h3>
+          <ul class="strengths-list" id="strengths-list-container">
+            <li class="strength-item" id="strength-item-1">
+              <span class="strength-bullet">[01]</span> Threat monitoring
+            </li>
+            <li class="strength-item" id="strength-item-2">
+              <span class="strength-bullet">[02]</span> Incident triage
+            </li>
+            <li class="strength-item" id="strength-item-3">
+              <span class="strength-bullet">[03]</span> Log analysis
+            </li>
+            <li class="strength-item" id="strength-item-4">
+              <span class="strength-bullet">[04]</span> Security documentation
+            </li>
+            <li class="strength-item" id="strength-item-5">
+              <span class="strength-bullet">[05]</span> Risk communication
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SKILLS SECTION
+       ========================================================================== */ -->
+  <section id="skills">
+    <div class="container">
+      <span class="mono-tag" id="skills-mono-tag">Arsenal Registry</span>
+      <h2 class="section-title" id="skills-heading">Technical <span>Capabilites</span></h2>
+      
+      <div class="skills-container">
+        <div class="skills-column reveal" id="skills-tools-column">
+          <h3 id="skills-tools-heading"><i data-lucide="terminal"></i> Core Tools & Technologies</h3>
+          <div class="skills-grid" id="skills-tools-grid">
+            <div class="skill-card" id="skill-siem">
+              <div class="skill-header">
+                <span class="skill-name">SIEM Platforms</span>
+                <span class="skill-badge">Intermediate</span>
+              </div>
+            </div>
+            <div class="skill-card" id="skill-splunk">
+              <div class="skill-header">
+                <span class="skill-name">Splunk</span>
+                <span class="skill-badge">Advanced</span>
+              </div>
+            </div>
+            <div class="skill-card" id="skill-endpoint">
+              <div class="skill-header">
+                <span class="skill-name">Endpoint Monitoring</span>
+                <span class="skill-badge">Advanced</span>
+              </div>
+            </div>
+            <div class="skill-card" id="skill-wireshark">
+              <div class="skill-header">
+                <span class="skill-name">Wireshark</span>
+                <span class="skill-badge">Advanced</span>
+              </div>
+            </div>
+            <div class="skill-card" id="skill-python">
+              <div class="skill-header">
+                <span class="skill-name">Python</span>
+                <span class="skill-badge">Intermediate</span>
+              </div>
+            </div>
+            <div class="skill-card" id="skill-linux">
+              <div class="skill-header">
+                <span class="skill-name">Linux</span>
+                <span class="skill-badge">Advanced</span>
+              </div>
+            </div>
+            <div class="skill-card" id="skill-threat-intel">
+              <div class="skill-header">
+                <span class="skill-name">Threat Intel</span>
+                <span class="skill-badge">Intermediate</span>
+              </div>
+            </div>
+            <div class="skill-card" id="skill-vuln-assessment">
+              <div class="skill-header">
+                <span class="skill-name">Vulnerability Assessment</span>
+                <span class="skill-badge">Advanced</span>
+              </div>
+            </div>
+            <div class="skill-card" id="skill-incident-response">
+              <div class="skill-header">
+                <span class="skill-name">Incident Response</span>
+                <span class="skill-badge">Advanced</span>
+              </div>
+            </div>
+            <div class="skill-card" id="skill-access-review">
+              <div class="skill-header">
+                <span class="skill-name">Access Review</span>
+                <span class="skill-badge">Intermediate</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-column reveal" id="skills-strengths-column">
+          <h3 id="skills-strengths-heading"><i data-lucide="shield"></i> Functional Strengths</h3>
+          <div class="chips-container" id="strengths-chips-grid">
+            <span class="strength-chip" id="chip-alert">Alert investigation</span>
+            <span class="strength-chip" id="chip-reporting">Security reporting</span>
+            <span class="strength-chip" id="chip-correlation">Log correlation</span>
+            <span class="strength-chip" id="chip-phishing">Phishing analysis</span>
+            <span class="strength-chip" id="chip-visibility">Endpoint visibility</span>
+            <span class="strength-chip" id="chip-coordination">Response coordination</span>
+          </div>
+          
+          <!-- Terminal Panel Simulator -->
+          <div class="crypto-key-box" style="margin-top: 2rem;" id="skills-console-simulator">
+            <div class="crypto-title">SECURE_DASHBOARD_SHELL.sh</div>
+            <div class="crypto-key" id="skills-console-text">
+              $ run-diagnostics --verbose<br>
+              [INFO] Initializing port scanners... OK<br>
+              [INFO] Verifying access parameters... OK<br>
+              [INFO] Active endpoint streams: 12 systems monitored<br>
+              [SYSTEM] All security nodes reporting normal bounds.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       EXPERIENCE SECTION
+       ========================================================================== -->
+  <section id="experience">
+    <div class="container">
+      <span class="mono-tag" id="experience-mono-tag">Chronological Log</span>
+      <h2 class="section-title" id="experience-heading">Professional <span>History</span></h2>
+      
+      <div class="experience-timeline" id="timeline-container">
+        
+        <!-- Experience Item 1 -->
+        <div class="timeline-item reveal" id="exp-irongate">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="job-title" id="job-title-irongate">Cybersecurity Analyst</h3>
+                <span class="company-info" id="job-company-irongate">IronGate Secure Services — Mexico City, Mexico</span>
+              </div>
+              <span class="job-date" id="job-date-irongate">Jan 2022 – Present</span>
+            </div>
+            <ul class="job-details" id="job-details-irongate">
+              <li>Monitored security alerts and triaged suspicious activity across endpoints, email, and cloud environments.</li>
+              <li>Documented incidents and supported investigation handoffs between SOC and infrastructure teams.</li>
+              <li>Improved alert categorization workflows, reducing false-positive handling time by 25%.</li>
+              <li>Assisted with recurring access reviews and security posture reporting for internal stakeholders.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Experience Item 2 -->
+        <div class="timeline-item reveal" id="exp-cobalt">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="job-title" id="job-title-cobalt">SOC Analyst</h3>
+                <span class="company-info" id="job-company-cobalt">Cobalt Meridian Solutions — Guadalajara, Mexico</span>
+              </div>
+              <span class="job-date" id="job-date-cobalt">Aug 2019 – Dec 2021</span>
+            </div>
+            <ul class="job-details" id="job-details-cobalt">
+              <li>Reviewed event logs, investigated alerts, and maintained incident notes for daily SOC operations.</li>
+              <li>Helped refine escalation procedures and improve the clarity of response documentation.</li>
+              <li>Supported phishing analysis and endpoint investigation tasks during active threat events.</li>
+              <li>Contributed to monthly risk summaries and security hygiene reports.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PROJECTS SECTION
+       ========================================================================== -->
+  <section id="projects">
+    <div class="container">
+      <span class="mono-tag" id="projects-mono-tag">Proof of Concept</span>
+      <h2 class="section-title" id="projects-heading">Security <span>Projects</span></h2>
+      
+      <div class="projects-grid" id="projects-container">
+        
+        <!-- Project 1 -->
+        <div class="project-card reveal" id="project-alertsense">
+          <div class="project-header">
+            <span>FILE: alert_board.py</span>
+            <div class="project-dots">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title" id="project-title-alertsense">AlertSense Triage Board</h3>
+            <p class="project-desc">
+              Built a triage board that grouped alerts by severity, source, and likely business impact.
+            </p>
+            <div class="project-impact" id="project-impact-alertsense">
+              <strong>Impact:</strong> Reduced time spent sorting routine alerts and improved incident prioritization.
+            </div>
+          </div>
+          <div class="project-footer">
+            <span class="project-tool">SIEM</span>
+            <span class="project-tool">Python</span>
+            <span class="project-tool">Incident Response</span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal" id="project-endpoint">
+          <div class="project-header">
+            <span>FILE: endpoint_scan.sh</span>
+            <div class="project-dots">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title" id="project-title-endpoint">Endpoint Watch Summary</h3>
+            <p class="project-desc">
+              Created a summary workflow for endpoint activity trends and recurring risk patterns.
+            </p>
+            <div class="project-impact" id="project-impact-endpoint">
+              <strong>Impact:</strong> Helped the team spot repeat issues faster and support proactive remediation.
+            </div>
+          </div>
+          <div class="project-footer">
+            <span class="project-tool">Linux</span>
+            <span class="project-tool">Endpoint Monitoring</span>
+            <span class="project-tool">Excel</span>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card reveal" id="project-phish">
+          <div class="project-header">
+            <span>FILE: phish_trace.md</span>
+            <div class="project-dots">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title" id="project-title-phish">PhishTrace Response Kit</h3>
+            <p class="project-desc">
+              Assembled a response kit for phishing investigations including checks, templates, and escalation notes.
+            </p>
+            <div class="project-impact" id="project-impact-phish">
+              <strong>Impact:</strong> Improved consistency in phishing handling and reduced response delays.
+            </div>
+          </div>
+          <div class="project-footer">
+            <span class="project-tool">Threat Intel</span>
+            <span class="project-tool">Documentation</span>
+            <span class="project-tool">Reporting</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CERTIFICATIONS & EDUCATION
+       ========================================================================== -->
+  <section id="certifications">
+    <div class="container">
+      <span class="mono-tag" id="certs-mono-tag">Credentials</span>
+      <h2 class="section-title" id="certs-heading">Education & <span>Certifications</span></h2>
+      
+      <div class="certs-grid-split">
+        
+        <!-- Certifications -->
+        <div class="certs-panel reveal" id="certs-panel-container">
+          <h3 id="certs-subheading">Certifications</h3>
+          <div class="certs-list" id="certs-list-container">
+            
+            <div class="cert-card" id="cert-security-plus">
+              <div class="cert-icon-wrapper">
+                <i data-lucide="shield-check"></i>
+              </div>
+              <div class="cert-info">
+                <h4 id="cert-title-security-plus">CompTIA Security+</h4>
+                <span class="cert-issuer">CompTIA</span>
+              </div>
+            </div>
+
+            <div class="cert-card" id="cert-csa">
+              <div class="cert-icon-wrapper">
+                <i data-lucide="award"></i>
+              </div>
+              <div class="cert-info">
+                <h4 id="cert-title-csa">Certified SOC Analyst (CSA)</h4>
+                <span class="cert-issuer">EC-Council</span>
+              </div>
+            </div>
+
+            <div class="cert-card" id="cert-cyberops">
+              <div class="cert-icon-wrapper">
+                <i data-lucide="terminal"></i>
+              </div>
+              <div class="cert-info">
+                <h4 id="cert-title-cyberops">Cisco CyberOps Associate</h4>
+                <span class="cert-issuer">Cisco Systems</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="edu-panel reveal" id="edu-panel-container">
+          <h3 id="edu-subheading">Education</h3>
+          <div class="edu-card" id="edu-card-1">
+            <h4 id="edu-degree">B.Sc. in Information Technology</h4>
+            <div class="edu-school" id="edu-institution">Instituto Tecnológico Autónomo</div>
+            <p class="edu-desc">
+              Focused on computer networks, information systems security, data management, and operational frameworks.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       TESTIMONIALS & HIGHLIGHTS
+       ========================================================================== -->
+  <section id="testimonials">
+    <div class="container">
+      <span class="mono-tag" id="testimonials-mono-tag">Feedbacks & Focus</span>
+      <h2 class="section-title" id="testimonials-heading">Colleague <span>Feedback</span></h2>
+      
+      <div class="testimonials-grid">
+        <!-- Slider Panel -->
+        <div class="testimonials-slider reveal" id="testimonials-slider-box">
+          <span class="quote-icon">“</span>
+          
+          <!-- Slide 1 -->
+          <div class="testimonial-slide active" id="slide-1">
+            <p class="testimonial-text">
+              “Javier is steady, thorough, and excellent at keeping security operations organized.”
+            </p>
+            <div class="testimonial-author">
+              <span class="author-name">SOC Manager</span>
+              <span class="author-role">Fictional Enterprise Security Group</span>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="testimonial-slide" id="slide-2">
+            <p class="testimonial-text">
+              “He brings real clarity to messy incident data and knows how to communicate risk clearly.”
+            </p>
+            <div class="testimonial-author">
+              <span class="author-name">IT Security Lead</span>
+              <span class="author-role">Fictional Enterprise Solutions</span>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <div class="slider-controls" id="slider-nav-controls">
+            <div class="slider-dot active" data-slide="1" id="dot-1"></div>
+            <div class="slider-dot" data-slide="2" id="dot-2"></div>
+          </div>
+        </div>
+
+        <!-- Highlights Panel -->
+        <div class="highlights-panel reveal" id="highlights-panel-container">
+          <h3 id="highlights-subheading">Key Highlights</h3>
+          <div class="highlights-list" id="highlights-list-container">
+            
+            <div class="highlight-item" id="highlight-1">
+              <div class="highlight-icon">
+                <i data-lucide="shield-check"></i>
+              </div>
+              <div class="highlight-text">
+                <h4>Operational Discipline</h4>
+                <p>Strong operational discipline in fast-paced SOC and network environments.</p>
+              </div>
+            </div>
+
+            <div class="highlight-item" id="highlight-2">
+              <div class="highlight-icon">
+                <i data-lucide="files"></i>
+              </div>
+              <div class="highlight-text">
+                <h4>Analysis & Reporting</h4>
+                <p>Equally comfortable with deep technical analysis and high-level risk reporting.</p>
+              </div>
+            </div>
+
+            <div class="highlight-item" id="highlight-3">
+              <div class="highlight-icon">
+                <i data-lucide="users"></i>
+              </div>
+              <div class="highlight-text">
+                <h4>Reliable Collaborator</h4>
+                <p>Actively assists infrastructure and sysadmin teams during active threat hunts.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CONTACT SECTION
+       ========================================================================== -->
+  <section id="contact">
+    <div class="container">
+      <span class="mono-tag crimson" id="contact-mono-tag">Secure Channels</span>
+      <h2 class="section-title" id="contact-heading">Secure a <span>Conversation</span></h2>
+      
+      <div class="contact-grid">
+        
+        <!-- Contact Info -->
+        <div class="contact-info-panel reveal" id="contact-info-panel-container">
+          <p class="contact-intro">
+            Have a project, open position, or security inquiry? Initiate an encrypted handshake. I am available for opportunities in security monitoring, incident investigations, and risk operations.
+          </p>
+          
+          <div class="contact-methods" id="contact-methods-list">
+            <div class="contact-method" id="method-email">
+              <div class="method-icon"><i data-lucide="mail"></i></div>
+              <div class="method-details">
+                <span>Direct Email</span>
+                <a href="mailto:javier.morales@fictionaldomain.com" id="email-link">javier.morales@fictionaldomain.com</a>
+              </div>
+            </div>
+
+            <div class="contact-method" id="method-linkedin">
+              <div class="method-icon"><i data-lucide="linkedin"></i></div>
+              <div class="method-details">
+                <span>Secure Professional Profile</span>
+                <a href="https://linkedin.com/in/javier-morales-demo" target="_blank" rel="noopener noreferrer" id="linkedin-link">linkedin.com/in/javier-morales-demo</a>
+              </div>
+            </div>
+
+            <div class="contact-method" id="method-portfolio">
+              <div class="method-icon"><i data-lucide="globe"></i></div>
+              <div class="method-details">
+                <span>Digital Domain</span>
+                <a href="https://javiermorales.security/demo" target="_blank" rel="noopener noreferrer" id="portfolio-link">javiermorales.security/demo</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PGP Public key widget to support cybersecurity theme -->
+          <div class="crypto-key-box reveal" id="pgp-key-widget">
+            <div class="crypto-title">HANDSHAKE_PKEY (RSA 2048)</div>
+            <div class="crypto-key">
+              -----BEGIN PGP PUBLIC KEY BLOCK-----<br>
+              mQENBF4/S1gBCADe42MocJq5Xz...<br>
+              FpG5k07Z8kR0uE5o4P/q7Jt1m...<br>
+              dGhpcyBpcyBhIGZpY3Rpb25hbC...<br>
+              -----END PGP PUBLIC KEY BLOCK-----
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-panel reveal" id="contact-form-container">
+          <div class="form-console-header">
+            <span>SECURE HANDSHAKE INTERFACE</span>
+            <div class="console-status">
+              <span class="status-dot"></span> CONNECTED
+            </div>
+          </div>
+
+          <form id="contact-form">
+            <div class="form-group">
+              <input type="text" id="fullname" name="fullname" class="form-input" placeholder=" " required>
+              <label for="fullname" class="form-label">Full Name</label>
+            </div>
+            
+            <div class="form-group">
+              <input type="email" id="email" name="email" class="form-input" placeholder=" " required>
+              <label for="email" class="form-label">Email Address</label>
+            </div>
+
+            <div class="form-group">
+              <input type="text" id="company" name="company" class="form-input" placeholder=" ">
+              <label for="company" class="form-label">Company</label>
+            </div>
+
+            <div class="form-group">
+              <textarea id="message" name="message" class="form-input" placeholder=" " required></textarea>
+              <label for="message" class="form-label">Message</label>
+            </div>
+
+            <div class="form-submit-wrapper">
+              <div class="form-notice">
+                * Handshake traffic is <span>encrypted</span>. No tracking cookies are active.
+              </div>
+              <button type="submit" class="btn btn-primary" id="btn-submit-form">
+                Secure a Conversation <i data-lucide="shield-check" style="margin-left: 0.5rem; width: 16px; height: 16px;"></i>
+              </button>
+            </div>
+
+            <div class="form-status-msg" id="form-status-msg"></div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <p class="footer-copyright" id="footer-copy-text">&copy; 2026 Javier Morales</p>
+        <p class="footer-demo-tag" id="footer-demo-tag">Fictional demo portfolio website for showcase purposes only.</p>
+      </div>
+      
+      <div class="footer-system-status" id="footer-sys-status">
+        <i data-lucide="check-circle" style="width: 14px; height: 14px;"></i> SYSTEM STATUS: SECURE (v2.6.0)
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lucide Icons and App Script -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="app.js"></script>
+</body>
+</html>
